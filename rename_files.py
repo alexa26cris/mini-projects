@@ -3,12 +3,12 @@ import string
 
 def rename_files():     #function definition
     #1 get the file names from a folder
-    file_list = os.listdir(r"C:\Users\imraj\Desktop\Udacity\zip\prank") #listdir() lists all the files, 'r' means 'raw path'
+    file_list = os.listdir(r"path_of_the_folder") #listdir() lists all the files, 'r' means 'raw path'
     print(file_list)
     
     saved_path = os.getcwd()
     print("Current Working directory is: "+saved_path)
-    os.chdir("C:\Users\imraj\Desktop\Udacity\zip\prank")
+    os.chdir("change_the_current_working_directory")
     
     #2 for each file, rename it and remove numbers from the name.
     for file_name in file_list:
