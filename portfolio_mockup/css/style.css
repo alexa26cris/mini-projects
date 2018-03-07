@@ -1,0 +1,317 @@
+body {
+    background: gray;
+    font-size: 90%;
+    font-family: Arial, sans-serif;
+    color: #666;
+    line-height: 1.7em;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #02b3e4;
+}
+
+a:hover {
+    color: #666;
+}
+
+h2 {
+    color: #781a26;
+}
+
+.clr {
+    clear: both;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+    clear: both;
+}
+
+.main-header #logo {
+    width: 40%;
+    margin: 10px 0;
+    display: block;
+    transition: width 2s;
+}
+
+.main-header .main-nav {
+    background: #02b3e0;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px #7d97ad solid;
+}
+
+.main-header .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header .main-nav li {
+    color: #fff;
+    display: inline;
+    float: left;
+    margin-right: 3px;
+}
+
+.main-header .main-nav li a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 20px;
+}
+
+.main-header .main-nav li a:hover, .main-header .main-nav li a.active {
+    background: #fff;
+    color: #7d97a0;
+    border-radius: 5px;
+}
+
+/*Content block */
+#content img#cover-pic {
+    width: 70%;
+    float: left;
+    overflow: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: width 1s;
+}
+
+/* Sidebar part */
+#sidebar {
+    width: 30%;
+    float: left;
+}
+
+#sidebar .block {
+    border-radius: 5px;
+    background: white;
+    overflow: auto;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+#sidebar .block #project1-img {
+    width: 50%;
+    float: left;
+    overflow: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: width 1s;
+}
+
+#sidebar .block #project2-img {
+    width: 50%;
+    float: left;
+    overflow: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: width 1s;
+}
+
+#sidebar .block #project3-img {
+    width: 50%;
+    float: left;
+    overflow: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: width 1s;
+}
+
+#sidebar a.readmore {
+    display: block;
+    float: right;
+    color: white;
+    padding: 5px 9px;
+    background: #02b3e4;
+    border-radius: 5px;
+}
+
+#sidebar a.readmore:hover {
+    background: #fff;
+    color: #666;
+}
+
+/* footer */
+footer {
+    background: #02b3e4;
+    height: 40px;
+    border: 1px solid #7d97ad;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0 0;
+}
+
+/*ADDING MEDIA QUERIES FOR VARIOUS DEVICES*/
+
+/* for ipads/tablets */
+@media screen and (min-width: 770px) and (max-width: 1077px) {
+    #container{
+        width: 95%;
+    }
+    
+    .main-header #logo {
+        margin: auto;
+        display: block;
+        width: 65%;
+        padding-bottom: 5px;
+        display: block;
+        transition: width 2s;
+    }
+    .main-header .main-nav {
+        display: block;
+        transition: height 1s;
+    }
+    #content {
+        width: 100%;
+        float: none;
+    }
+    
+    #content #cover-pic{
+        width: 100%;
+        float: none;
+    }
+    #sidebar {
+        width: 100%;
+        float: none;
+    }
+    
+    #sidebar .block {
+        margin-left: 0;
+    }
+}
+
+/* for small devices like small tablets */
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    #container {
+        width: 95%;
+    }
+    
+    .main-header #logo {
+        margin: auto;
+        display: block;
+        width: 65%;
+        padding-bottom: 5px;
+    }
+    
+    .main-header .main-nav {
+        height: auto;
+        display: block;
+        overflow: hidden;
+        width: 99%;
+        transition: width 1s;
+    }
+    
+    .main-header .main-nav ul {
+        padding: 2% 1%;
+        text-align: center;
+        width: 98%;
+    }
+    
+    .main-header .main-nav li {
+        float: none;
+        display: block;
+        margin-right: 0;
+        width: 100%;
+        border-bottom: 1px solid #7d97ad;
+    }
+    
+    .main-header .main-nav li a{
+        margin-bottom: 2px;
+        text-align: center;
+    }
+    
+    .main-header .main-nav li a:hover, .main-header .main-nav li a.active {
+        display: block;
+    }
+
+    #content {
+        width: 100%;
+        float: none;
+    }
+    
+    #content #cover-pic{
+        width: 100%;
+        float: none;
+    }
+    #sidebar {
+        width: 100%;
+        float: none;
+    }
+    
+    #sidebar .block {
+        margin-left: 0;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 500px) {
+    #container {
+        width: 95%;
+    }
+    
+    .main-header #logo {
+        margin: auto;
+        display: block;
+        width: 95%;
+        padding-bottom: 5px;
+    }
+    
+    .main-header .main-nav {
+        height: auto;
+        display: block;
+        overflow: hidden;
+        width: 99%;
+    }
+    
+    .main-header .main-nav ul {
+        padding: 2% 1%;
+        text-align: center;
+        width: 98%;
+    }
+    
+    .main-header .main-nav li {
+        float: none;
+        display: block;
+        margin-right: 0;
+        width: 100%;
+        border-bottom: 1px solid #7d97ad;
+    }
+    
+    .main-header .main-nav li a{
+        margin-bottom: 2px;
+        text-align: center;
+    }
+    
+    .main-header .main-nav li a:hover, .main-header .main-nav li a.active {
+        display: block;
+    }
+
+    #content {
+        width: 100%;
+        float: none;
+    }
+    
+    #content #cover-pic{
+        width: 100%;
+        float: none;
+    }
+    #sidebar {
+        width: 100%;
+        float: none;
+    }
+    
+    #sidebar .block {
+        margin-left: 0;
+    }   
+}
