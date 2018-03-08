@@ -84,7 +84,8 @@ h2 {
 /* Sidebar part */
 #sidebar {
     width: 30%;
-    float: left;
+    display: flex;
+    flex-direction: column;
 }
 
 #sidebar .block {
@@ -95,32 +96,14 @@ h2 {
     margin-top: 10px;
 }
 
-#sidebar .block #project1-img {
+#sidebar .block #project1-img, #sidebar .block #project2-img, #sidebar .block #project3-img {
     width: 50%;
     float: left;
     overflow: auto;
     border-radius: 5px;
     margin-top: 10px;
     transition: width 1s;
-}
-
-#sidebar .block #project2-img {
-    width: 50%;
-    float: left;
-    overflow: auto;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: width 1s;
-}
-
-#sidebar .block #project3-img {
-    width: 50%;
-    float: left;
-    overflow: auto;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: width 1s;
-}
+}s
 
 #sidebar a.readmore {
     display: block;
@@ -183,7 +166,7 @@ footer p {
     }
     #sidebar {
         width: 100%;
-        float: none;
+        flex-direction: row;
     }
     
     #sidebar .block {
@@ -235,18 +218,15 @@ footer p {
         display: block;
     }
 
-    #content {
+    #content #cover-pic {
         width: 100%;
-        float: none;
     }
-    
-    #content #cover-pic{
-        width: 100%;
-        float: none;
-    }
+
     #sidebar {
         width: 100%;
-        float: none;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: stretch;
     }
     
     #sidebar .block {
@@ -281,7 +261,6 @@ footer p {
     }
     
     .main-header .main-nav li {
-        float: none;
         display: block;
         margin-right: 0;
         width: 100%;
@@ -299,16 +278,16 @@ footer p {
 
     #content {
         width: 100%;
-        float: none;
     }
     
     #content #cover-pic{
         width: 100%;
-        float: none;
     }
     #sidebar {
         width: 100%;
-        float: none;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: stretch;
     }
     
     #sidebar .block {
