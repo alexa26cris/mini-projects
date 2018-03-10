@@ -20,10 +20,6 @@ h2 {
     color: #781a26;
 }
 
-.clr {
-    clear: both;
-}
-
 #container {
     width: 80%;
     margin: 0 auto;
@@ -34,7 +30,7 @@ h2 {
 .main-header #logo {
     width: 40%;
     margin: 10px 0;
-    display: block;
+    display: flex;
     transition: width 2s;
 }
 
@@ -42,7 +38,7 @@ h2 {
     background: #02b3e0;
     height: 40px;
     border-radius: 5px;
-    border: 1px #7d97ad solid;
+    border: 1px solid #7d97ad;
 }
 
 .main-header .main-nav ul {
@@ -54,13 +50,12 @@ h2 {
 .main-header .main-nav li {
     color: #fff;
     display: inline;
-    float: left;
     margin-right: 3px;
 }
 
 .main-header .main-nav li a {
     color: #fff;
-    display: inline-block;
+    display: inline-flex;
     padding: 10px 20px;
     height: 20px;
 }
@@ -73,40 +68,36 @@ h2 {
 
 /*Content block */
 #content img#cover-pic {
-    width: 70%;
-    float: left;
-    overflow: auto;
+    width: 100%;
+
     border-radius: 5px;
     margin-top: 10px;
     transition: width 1s;
 }
 
 /* Sidebar part */
-#sidebar {
-    width: 30%;
+.sidebar {
     display: flex;
-    flex-direction: column;
 }
 
-#sidebar .block {
-    border-radius: 5px;
+.sidebar > .block {
+    border-radius: 20px;
     background: white;
-    overflow: auto;
     padding: 10px 15px;
     margin-top: 10px;
 }
 
-#sidebar .block #project1-img, #sidebar .block #project2-img, #sidebar .block #project3-img {
-    width: 50%;
-    float: left;
-    overflow: auto;
+.sidebar .block #project1-img, .sidebar .block #project2-img, .sidebar .block #project3-img, .sidebar .block #project4-img {
+    width: 40%;
+    align-items: flex-start;
     border-radius: 5px;
     margin-top: 10px;
+    margin-left: 50px;
     transition: width 1s;
-}s
+}
 
-#sidebar a.readmore {
-    display: block;
+.sidebar a.readmore {
+    display: flex;
     float: right;
     color: white;
     padding: 5px 9px;
@@ -114,7 +105,7 @@ h2 {
     border-radius: 5px;
 }
 
-#sidebar a.readmore:hover {
+.sidebar a.readmore:hover {
     background: #fff;
     color: #666;
 }
@@ -138,6 +129,7 @@ footer p {
 /*ADDING MEDIA QUERIES FOR VARIOUS DEVICES*/
 
 /* for ipads/tablets */
+
 @media screen and (min-width: 770px) and (max-width: 1077px) {
     #container{
         width: 95%;
@@ -148,21 +140,21 @@ footer p {
         display: block;
         width: 65%;
         padding-bottom: 5px;
-        display: block;
+        display: inline-flex;
         transition: width 2s;
     }
     .main-header .main-nav {
-        display: block;
+        display: inline-flex;
         transition: height 1s;
     }
     #content {
         width: 100%;
-        float: none;
+        flex: none;
     }
     
     #content #cover-pic{
         width: 100%;
-        float: none;
+        flex: none;
     }
     #sidebar {
         width: 100%;
@@ -182,14 +174,14 @@ footer p {
     
     .main-header #logo {
         margin: auto;
-        display: block;
+        display: inline-flex;
         width: 65%;
         padding-bottom: 5px;
     }
     
     .main-header .main-nav {
         height: auto;
-        display: block;
+        display: inline-flex;
         overflow: hidden;
         width: 99%;
         transition: width 1s;
@@ -202,8 +194,8 @@ footer p {
     }
     
     .main-header .main-nav li {
-        float: none;
-        display: block;
+        flex: none;
+        display: inline-flex;
         margin-right: 0;
         width: 100%;
         border-bottom: 1px solid #7d97ad;
@@ -249,7 +241,7 @@ footer p {
     
     .main-header .main-nav {
         height: auto;
-        display: block;
+        display: inline-flex;
         overflow: hidden;
         width: 99%;
     }
