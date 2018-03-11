@@ -214,14 +214,14 @@ footer p {
         width: 100%;
     }
 
-    #sidebar {
+    .sidebar {
         width: 100%;
         flex-direction: column;
         justify-content: flex-end;
         align-items: stretch;
     }
     
-    #sidebar .block {
+    .sidebar .block {
         margin-left: 0;
     }
 }
@@ -241,7 +241,7 @@ footer p {
     
     .main-header .main-nav {
         height: auto;
-        display: inline-flex;
+        display: flex;
         overflow: hidden;
         width: 99%;
     }
@@ -275,14 +275,14 @@ footer p {
     #content #cover-pic{
         width: 100%;
     }
-    #sidebar {
+    .sidebar {
         width: 100%;
         flex-direction: column;
         justify-content: flex-end;
         align-items: stretch;
     }
     
-    #sidebar .block {
+    .sidebar .block {
         margin-left: 0;
     }   
 }
